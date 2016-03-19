@@ -1,0 +1,62 @@
+/* Spanish-Rose: #882D6A; */
+/* Green: #8FBF59; */
+
+/* General Settings */
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+/* Navigation element  */
+
+@media (min-width: 1125px) {
+	#nav-list {
+		max-width: 1125px;
+		margin-right: 0 auto;
+		float: right;
+	}
+
+	#nav-list li {
+		display: inline;
+		float: right;
+		margin: 50px 2em 0.5em 0em;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+ 	/* Logo*/
+	#nav-logo {
+		width: 200px;
+		height: 100px;
+		margin-top: 1em;
+		margin-right: 1em;
+		margin-left: 1em;
+	}
+}
+
+#nav-list a { 
+	text-decoration: none;
+	font-weight: 100;
+	font-variant: small-caps;
+}
+
+#nav-list a:link {
+	color: gray;
+}
+
+#nav-list a:visited {
+	color: gray;
+}
+
+#nav-list a:hover {
+	color: #8FBF59;
+}
+
+#nav-list a:active {
+	color: black;
+}

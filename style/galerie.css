@@ -1,0 +1,9 @@
+.imageBox {
+	display: inline-block;
+	margin: 1em;
+}
+
+.imageBox img {
+	max-width: 512px;
+	max-height: 256px;
+}
