@@ -12,30 +12,82 @@
 	font-family: "Josefin Sans", sans-serif;
 }
 
-/* Navigation element  */
+/* Navigation element, default browser experience */
 
-@media (min-width: 1125px) {
+/* small screens (phones etc) */
+@media screen and (min-width: 1px) and (max-width: 674px) {
+	#nav {
+		margin: 0 auto;
+		display: block;
+	}
+
 	#nav-list {
-		max-width: 1125px;
-		margin-right: 0 auto;
-		float: right;
+		text-align: center;
+		font-size: 1em;
+	}
+
+	#nav-list li {
+		margin: 0.1em 0em 0.1em 0em auto;
+		font-size: 1.2em;
+		border-bottom: 1px solid #000;
+	}
+
+	/* Logo*/
+	#nav-logo {
+		max-width: 100%;
+		height: auto;
+		width: auto\9;
+		padding: 0em 1em 0em 1em;
+		border-bottom: 1px solid #000;
+	}
+}
+
+/* medium screens */
+@media screen and (min-width: 675px) and (max-width: 1049px) {
+	#nav {
+		max-width: 1049px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#nav-list {
+		text-align: center;
+		font-size: 1em;
+	}
+
+	#nav-list li {
+		display: inline;
+		margin: 0.5em 1em 1em 0em;
+		font-size: 1em;
+	}
+
+	/* Logo*/
+	#nav-logo {
+		display: block;
+		height: 150px;
+		padding: 1em 1em 1em 1em;
+		margin: 0 auto;
+	}
+}
+
+/* large screens */
+@media screen and (min-width: 1050px) {
+	#nav {
+		width: 1050px;
+		margin: 0 auto;
 	}
 
 	#nav-list li {
 		display: inline;
 		float: right;
-		margin: 50px 2em 0.5em 0em;
+		margin: 75px 1.7em 0.5em 0em;
 		text-align: center;
-		font-size: 1.2em;
 	}
 
  	/* Logo*/
 	#nav-logo {
-		width: 200px;
-		height: 100px;
-		margin-top: 1em;
-		margin-right: 1em;
-		margin-left: 1em;
+		height: 150px;
+		margin: 1em 1em 0em 1em;
 	}
 }
 
