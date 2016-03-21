@@ -6,20 +6,20 @@
    ===========================*/
 /* small screens (phones etc) */
 @media screen and (min-width: 1px) and (max-width: 674px) {
-	.imageRondel {
+	.largeCenterContainer {
 		width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 		border: solid 1px red;
 	}
 
-	.imageRondel li {
+	.largeCenterContainer li {
 		display: inline;
 		margin: 75px 1.7em 0.5em 0em;
 		text-align: center;
 	}
 
-	.imageRondel img {
+	.largeCenterContainer img {
 		max-width: 300px;
 		max-height: 150px;
 	}
@@ -27,56 +27,48 @@
 
 /* medium screens */
 @media screen and (min-width: 675px) and (max-width: 1049px) {
-	.imageRondel {
-		width: 300px;
+	.largeCenterContainer {
+		width: 675px;
+		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
-		border: solid 1px red;
 	}
 
-	.imageRondel li {
+	.largeCenterContainer li {
 		display: inline;
-		margin: 75px 1.7em 0.5em 0em;
-		text-align: center;
+		margin-right: 5px;
+		margin-left: 5px;
 	}
 
-	.imageRondel img {
-		max-width: 300px;
-		max-height: 150px;
+	.largeCenterContainer img {
+		width: 210px;
+		height: 150px;
+		border-bottom-width: 20px;
+		border-bottom-style: groove;
+		border-bottom-color: #8FBF59;
 	}
 }
 
-
-
-
-
-
-
-
 /* large screens */
 @media screen and (min-width: 1050px) {
-	.imageRondel {
+	.largeCenterContainer {
 		width: 1050px;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.imageRondel li {
+	.largeCenterContainer li {
 		display: inline;
 		margin-right: 5px;
 		margin-left: 5px;
 	}
 
-	.imageRondel img {
+	.largeCenterContainer img {
 		width: 335px;
 		height: 245px;
-		border-bottom-width: 15px;
-		border-bottom-style: ridge;
+		border-bottom-width: 20px;
+		border-bottom-style: groove;
 		border-bottom-color: #8FBF59;
-	}
-
-	#specialSnowflake {
-		margin-left: 349px;
 	}
 }
