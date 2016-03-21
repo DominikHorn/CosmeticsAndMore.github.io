@@ -12,7 +12,14 @@
 	font-family: "Josefin Sans", sans-serif;
 }
 
-/* Navigation element, default browser experience */
+h1 {
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: normal;
+}
+
+/* ==============================================
+   Navigation element, default browser experience 
+   ==============================================*/
 
 /* small screens (phones etc) */
 @media screen and (min-width: 1px) and (max-width: 674px) {
@@ -32,7 +39,7 @@
 		border-bottom: 1px solid #000;
 	}
 
-	/* Logo*/
+	/* Logo */
 	#nav-logo {
 		max-width: 100%;
 		height: auto;
@@ -61,7 +68,7 @@
 		font-size: 1em;
 	}
 
-	/* Logo*/
+	/* Logo */
 	#nav-logo {
 		display: block;
 		height: 150px;
@@ -84,7 +91,7 @@
 		text-align: center;
 	}
 
- 	/* Logo*/
+ 	/* Logo */
 	#nav-logo {
 		height: 150px;
 		margin: 1em 1em 0em 1em;
@@ -111,4 +118,10 @@
 
 #nav-list a:active {
 	color: black;
+}
+
+/* Welcome Banner */
+#welcomeBanner {
+	text-align: center;
+	margin-top: 1em;
 }
