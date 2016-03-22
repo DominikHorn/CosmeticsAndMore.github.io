@@ -6,52 +6,75 @@
    ===========================*/
 /* small screens (phones etc) */
 @media screen and (min-width: 1px) and (max-width: 674px) {
-	.largeCenterContainer {
-		width: 300px;
-		margin-left: auto;
-		margin-right: auto;
-		border: solid 1px red;
-	}
 
-	.largeCenterContainer li {
-		display: inline;
-		margin: 75px 1.7em 0.5em 0em;
-		text-align: center;
-	}
-
-	.largeCenterContainer img {
-		max-width: 300px;
-		max-height: 150px;
-	}
 }
 
 /* medium screens */
 @media screen and (min-width: 675px) and (max-width: 1074px) {
+	.largeTextContainer {
+		width: auto;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+		text-align: justify;
+		font-size: 1.2em;
+	}
 
+	.largeImgContainer {
+		overflow: hidden;
+		margin-top: 50px;
+		width: 1075px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.largeImgContainer img {
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+		width: auto;
+		height: 250px;
+
+		border-bottom-style: groove;
+		border-bottom-color: #8FBF59;
+		border-width: 15px;
+	}
+
+	.largeImgContainer li {
+		display: inline;
+	}
 }
 
 /* large screens */
 @media screen and (min-width: 1075px) {
-	.largeTopContainer {
-		overflow: auto;
-		margin-top: 20px;
-		text-align: center;
+	.largeTextContainer {
+		width: 1050px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 1.2em;
 	}
 
-	.largeTopContainer img {
-		max-width: 29%;
-		width: auto;
-		height: 300px auto;
-		min-height: 300px;
-		max-height: 450px;
+	.largeImgContainer {
+		overflow: hidden;
+		margin-top: 50px;
+		width: 1075px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.largeImgContainer img {
 		margin-left: 0.5em;
 		margin-right: 0.5em;
-		border-bottom-width: 20px;
+		width: auto;
+		height: 250px;
+
 		border-bottom-style: groove;
 		border-bottom-color: #8FBF59;
+		border-width: 15px;
 	}
 
-	.largeTopContainer li {
+	.largeImgContainer li {
 		display: inline;
 	}
 }
@@ -60,4 +83,6 @@
 #welcomeBanner {
 	text-align: center;
 	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-size: 2.5em;
 }
