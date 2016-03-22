@@ -32,29 +32,27 @@
 
 /* large screens */
 @media screen and (min-width: 1075px) {
-	.largeCenterContainer {
+	.largeTopContainer {
 		overflow: auto;
-		margin-top: 10px;
+		margin-top: 20px;
+		text-align: center;
 	}
 
-	.largeCenterContainer img {
-		max-width: 100%;
+	.largeTopContainer img {
+		max-width: 29%;
 		width: auto;
-		height: auto;
-		float: left;
+		height: 300px auto;
+		min-height: 300px;
+		max-height: 450px;
 		margin-left: 0.5em;
 		margin-right: 0.5em;
+		border-bottom-width: 20px;
+		border-bottom-style: groove;
+		border-bottom-color: #8FBF59;
 	}
 
-	.largeCenterContainer ul {
-		padding-top: 50px;
-		float: both;
-	}
-
-	.largeCenterContainer li {
+	.largeTopContainer li {
 		display: inline;
-		margin-right: 1.5em;
-		font-size: 1.2em;
 	}
 }
 
