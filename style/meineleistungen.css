@@ -9,6 +9,7 @@
 .angebot {
 	padding: 1em 0.5em 1em 0.5em;
 	border: dashed 2px #882D6A;
+	border-left: dashed 2px #882D6A;
 	font-size: 1.2em;
 	display: inline-block;
 	vertical-align: bottom;
