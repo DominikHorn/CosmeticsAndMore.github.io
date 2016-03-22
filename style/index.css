@@ -6,7 +6,42 @@
    ===========================*/
 /* small screens (phones etc) */
 @media screen and (min-width: 1px) and (max-width: 674px) {
+	.largeTextContainer {
+		width: auto;
+		margin-left: 3em;
+		margin-right: 3em;
+		text-align: justify;
+		font-size: 1.5em;
+		overflow: hidden;
+	}
 
+	.largeImgContainer {
+		overflow: hidden;
+		margin-top: 50px;
+		width: auto;
+		text-align: center;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+	}
+
+	.largeImgContainer img {
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+		height: 130px;
+
+		border-bottom-style: groove;
+		border-bottom-color: #8FBF59;
+		border-width: 15px;
+	}
+
+	.largeImgContainer li {
+		display: inline;
+	}
+
+	#welcomeBanner {
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+	}
 }
 
 /* medium screens */
@@ -16,23 +51,25 @@
 		margin-left: 1.5em;
 		margin-right: 1.5em;
 		text-align: justify;
-		font-size: 1.2em;
+		font-size: 1.7em;
+		overflow: hidden;
 	}
 
 	.largeImgContainer {
 		overflow: hidden;
 		margin-top: 50px;
-		width: 1075px;
+		width: auto;
 		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
 	}
 
 	.largeImgContainer img {
 		margin-left: 0.5em;
 		margin-right: 0.5em;
-		width: auto;
-		height: 250px;
+		max-width: 30%;
+		max-height: 30%;
+		width: 30%;
 
 		border-bottom-style: groove;
 		border-bottom-color: #8FBF59;
@@ -41,6 +78,11 @@
 
 	.largeImgContainer li {
 		display: inline;
+	}
+
+	#welcomeBanner {
+		margin-left: 1.5em;
+		margin-right: 1.5em;
 	}
 }
 
@@ -51,7 +93,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		text-align: justify;
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 
 	.largeImgContainer {
@@ -67,7 +109,7 @@
 		margin-left: 0.5em;
 		margin-right: 0.5em;
 		width: auto;
-		height: 250px;
+		height: 230px;
 
 		border-bottom-style: groove;
 		border-bottom-color: #8FBF59;
@@ -84,5 +126,5 @@
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 0.5em;
-	font-size: 2.5em;
+	font-size: 3em;
 }
