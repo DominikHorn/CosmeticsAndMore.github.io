@@ -11,6 +11,15 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Josefin-Sans';
+	src: url('../font/JosefinSans-Regular.eot?#iefix') format('embedded-opentype');
+	src: url('../font/JosefinSans-Regular.ttf') format("truetype");
+	src: url('../font/JosefinSans-Regular.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
