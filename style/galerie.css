@@ -1,10 +1,38 @@
+/* Spanish-Rose: #882D6A; */
+/* Green: #8FBF59; */
+
+.images {
+	text-align: center;
+}
+
 .imageBox {
 	display: inline-block;
 	margin: 1em;
-	box-shadow: 5px 5px 5px gray;
+	box-shadow: 5px 5px 10px gray;
+	padding-bottom: 0px;
 }
 
-.imageBox img {
-	max-width: 512px;
-	max-height: 256px;
+/* small screen */
+@media screen and (min-width: 1px) and (max-width: 674px) {
+	.imageBox {
+		height: 137px;
+		width: 199px;
+	}
+
+	.imageBox img {
+		width: 200px;
+		border-bottom: groove 10px #8FBF59;
+	}
+}
+
+/* medium screens */
+@media screen and (min-width: 675px) {
+	.imageBox {
+		height: 256px;
+	}
+	.imageBox img {
+		border-bottom: groove 10px #8FBF59;
+		max-width: 512px;
+		max-height: 256px;
+	}
 }
