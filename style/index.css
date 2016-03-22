@@ -45,7 +45,7 @@
 }
 
 /* medium screens */
-@media screen and (min-width: 675px) and (max-width: 1074px) {
+@media screen and (min-width: 675px) and (max-width: 1099px) {
 	.largeTextContainer {
 		width: auto;
 		margin-left: 1.5em;
@@ -87,13 +87,13 @@
 }
 
 /* large screens */
-@media screen and (min-width: 1075px) {
+@media screen and (min-width: 1100px) {
 	.largeTextContainer {
 		width: 1050px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: justify;
-		font-size: 1.4em;
+		font-size: 1.5em;
 	}
 
 	.largeImgContainer {
@@ -126,5 +126,5 @@
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 0.5em;
-	font-size: 3em;
+	font-size: 3.5em;
 }
