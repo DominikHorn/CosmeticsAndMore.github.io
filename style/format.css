@@ -6,6 +6,9 @@
 	font-family: 'Josefin-Sans';
 	src: url('../font/JosefinSans-Light.eot?#iefix') format('embedded-opentype');
 	src: url('../font/JosefinSans-Light.ttf') format("truetype");
+	src: url('../font/JosefinSans-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
