@@ -1,0 +1,172 @@
+/* Spanish-Rose: #882D6A; */
+/* Green: #8FBF59; */
+
+#form {
+	margin-top: 2em;
+	display: block-inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#form ul {
+	list-style: none;
+}
+
+#form p {
+	margin-bottom: 0.3em;
+	margin-top: 1em;
+	font-size: 20px;
+}
+
+input {
+	padding: 10px;
+	border: solid 1px #8FBF59;
+	font-size: 18px;
+	transition: box-shadow 0.5s, border 0.5s;
+}
+
+input:focus {
+	border: solid 1px #882D6A;
+	box-shadow: 0 0 5px 1px #969696;
+	outline: none;
+}
+
+input.error {
+	border: solid 2px red;
+}
+
+textarea {
+	padding: 10px;
+	border: solid 1px #8FBF59;
+	font-size: 18px;
+	transition: box-shadow 0.5s, border 0.5s;
+}
+
+textarea:focus {
+	border: solid 1px #882D6A;
+	box-shadow: 0 0 5px 1px #969696;
+	outline: none;
+}
+
+textarea.error {
+	border: solid 2px red;
+}
+
+#button {
+	display: inline-block;
+	background-color: #8FBF59;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.3em;
+	border-radius: 8px;
+	outline: none;
+	margin-top: 30px;
+	margin-left: -3px;
+
+	/* hover animation stuff */
+    cursor: pointer;
+}
+
+#button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: padding-right 0.5s, right 0.5s, opacity 0.5s, content 0.5s;
+}
+
+#button span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: padding-right 0.5s, right 0.5s, opacity 0.5s, content 0.5s;
+}
+
+#button:hover span {
+	padding-right: 25px;
+}
+
+#button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+#button:hover {
+	background-color: #882D6A;
+	color: white;
+	border: none;
+	outline: none;
+}
+
+#button:active {
+	background-color: gray;
+	color: white;
+	border: none;
+	outline: none;
+}
+
+/* low width */
+@media screen and (min-width: 1px) and (max-width: 899px) {
+	#form {
+		width: auto;
+		margin-left: 10%;
+	}
+
+	#button {
+		max-width: 899px;
+		width: 90%;
+	}
+
+	#bigInput {
+		max-width: 899px;
+		width: 90%;
+		height: 300px;
+	}
+
+	input {
+		max-width: 899px;
+		width: 80%;
+	}
+}
+
+/* medium and large screens */
+@media screen and (min-width: 900px) {
+	#form {
+		width: 506px;
+		overflow: auto;
+	}
+
+	#button {
+		width: 506px;
+	}
+
+	#bigInput {
+		width: 500px;
+		height: 300px;
+	}
+
+	input {
+		width: 400px;
+	}
+
+}
+
+#kontakt {
+	text-align: center;
+	margin: 3em 1em 1em;
+	float: middle;
+}
+
+#kontakt h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+#kontakt p {
+	font-size: 1.5em;
+	line-height: 1.3em;
+}

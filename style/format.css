@@ -96,7 +96,7 @@
 		display: inline;
 		margin-left: 0.5em;
 		margin-right: 0.5em;
-		font-size: 21px;
+		font-size: 20px;
 	}
 }
 
@@ -142,6 +142,7 @@
 
 .navigation a:link {
 	color: gray;
+	transition: color 0.3s;
 }
 
 .navigation a:visited {
@@ -150,6 +151,7 @@
 
 .navigation a:hover {
 	color: #8FBF59;
+	transition: color 0.3s;
 }
 
 .navigation a:active {

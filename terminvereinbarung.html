@@ -3,7 +3,66 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Cosmetics and More</title>
+		<link href="style/terminvereinbarung.css" rel="stylesheet" type="text/css">
 		<link href="style/format.css" rel="stylesheet" type="text/css">
+
+		<script>
+			function sendMail() {
+				var nameElement = document.getElementsByName('name')[0];
+				var numberElement = document.getElementsByName('rufnummer')[0];
+				var subjectElement = document.getElementsByName('betreff')[0];
+				var messageElement = document.getElementsByName('nachricht')[0];
+				nameElement.className = "";
+				numberElement.className = "";
+				subjectElement.className = "";
+				messageElement.className = "";
+
+				var mail = escape(document.getElementsByName('mail')[0].value);
+				var message = escape(messageElement.value);
+				var name = escape(nameElement.value);
+				var number = escape(numberElement.value);
+				var subject = escape(subjectElement.value);
+
+
+				if (!name || name === "") {
+					nameElement.className = "error";
+					nameElement.focus();
+
+					return;
+				}
+
+				if (!number || number === "") {
+					numberElement.className = "error";
+					numberElement.focus();
+
+					return;
+				}
+
+				if (!subject || subject === "") {
+					subjectElement.className = "error";
+					subjectElement.focus();
+
+					return;
+				}
+
+				if (!message || message === "") {
+					messageElement.className = "error";
+					messageElement.focus();
+
+					return;
+				}	
+
+				var link = "mailto:cosmetics_and_more@me.com"
+						 + "?cc=" + mail
+						 + "&subject=" + subject
+						 + "&body=" + message
+						 + "\n\r\n\rSie erreichen mich unter " + number + ", oder: "
+						 + mail
+						 + "\nMfG\n" + name
+						 ;
+				window.location.href = link;
+			}
+		</script>
 	</head>
 	<body>
 		<nav class="navigation">
@@ -17,5 +76,25 @@
 			</ul>
 		</nav>
 
+		<div id="form">
+			<ul>
+				<li><p>Ihr Name (Pflichtfeld)</p><input type="text" name="name" placeholder="Max Mustermann"></li>
+				<li><p>Ihre E-mail Adresse</p><input type="text" name="mail" placeholder="mustermann.max@beispiel.de"></li>
+				<li><p>Ihre Rufnummer (Pflichtfeld)</p><input type="text" name="rufnummer" placeholder="+49 179 2947662"></li>
+				<li><p>Betreff (Pflichtfeld)</p><input type="text" name="betreff" placeholder="Termin vereinbaren"></li>
+				<li><p>Ihre Nachricht (Pflichtfeld)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihren Wunschtermin oder Ihr sonstiges Anliegen detailiert."></textarea></li>
+			</ul>
+			<button id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
+		</div>
+
+		<div id="kontakt">
+			<h2>Kontaktdaten:</h2>
+			<p>Katarzyna Thurand</p>
+			<p>Pretzfelder Strasse 15</p>
+			<p>81249 München</p>
+			<p>Telefon: +49 89 99757034</p>
+			<p>Mobil: +49 179 2947662</p>
+			<p>Email: cosmetics_and_more@me.com</p>
+		</div>
 	</body>
 </html>
