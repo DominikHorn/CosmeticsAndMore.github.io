@@ -53,12 +53,10 @@
 				}	
 
 				var link = "mailto:cosmetics_and_more@me.com"
-						 + "?cc=" + mail
-						 + "&subject=" + subject
-						 + "&body=" + message
-						 + "\n\r\n\rSie erreichen mich unter " + number + ", oder: "
-						 + mail
-						 + "\nMfG\n" + name
+						 + "?cc=" + unescape(mail)
+						 + "&subject=" + unescape(subject)
+						 + "&body=" + unescape(message)
+						 + escape("\n\n\n------------------------------------------\nKontaktdaten:\n\nName: \"") + unescape(name) + escape("\"\nRufnummer: \"") + number + escape("\"\nE-mail: \"") + mail + escape("\"\n------------------------------------------");
 						 ;
 				window.location.href = link;
 			}
