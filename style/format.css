@@ -38,7 +38,7 @@
 	.navigation {
 		overflow: auto;
 		text-align: center;
-		border-bottom-width: 2px;
+		border-bottom-width: 5px;
 		border-bottom-color: #882D6A;
 		border-bottom-style: solid;
 	}
@@ -57,7 +57,7 @@
 	}
 
 	.navigation li {
-		border-top-width: 2px;
+		border-top-width: 5px;
 		border-top-color: #882D6A;
 		border-top-style: solid;
 		padding-top: 0.25em;
@@ -85,7 +85,7 @@
 	.navigation ul {
 		padding-top: 10px;
 
-		border-bottom-width: 5px;
+		border-bottom-width: 0.6cm;
 		border-bottom-style: solid;
 		border-color: #882D6A;
 		padding-bottom: 5px;
@@ -122,7 +122,7 @@
 
 		font-size: 1.2em;
 
-		border-bottom-width: 5px;
+		border-bottom-width: 0.6cm;
 		border-bottom-style: solid;
 		border-color: #882D6A;
 		padding-bottom: 5px;
