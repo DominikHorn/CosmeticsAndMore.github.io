@@ -8,25 +8,33 @@
 
 		<script>
 			function sendMail() {
+				var mailElement = document.getElementsByName('mail')[0];
 				var nameElement = document.getElementsByName('name')[0];
 				var numberElement = document.getElementsByName('rufnummer')[0];
 				var subjectElement = document.getElementsByName('betreff')[0];
 				var messageElement = document.getElementsByName('nachricht')[0];
+				mailElement.className = "";
 				nameElement.className = "";
 				numberElement.className = "";
 				subjectElement.className = "";
 				messageElement.className = "";
 
-				var mail = escape(document.getElementsByName('mail')[0].value);
+				var mail = escape(mailElement.value);
 				var message = escape(messageElement.value);
 				var name = escape(nameElement.value);
 				var number = escape(numberElement.value);
 				var subject = escape(subjectElement.value);
 
-
 				if (!name || name === "") {
 					nameElement.className = "error";
 					nameElement.focus();
+
+					return;
+				}
+
+				if (!mail || mail === "") {
+					mailElement.className = "error";
+					mailElement.focus();
 
 					return;
 				}
@@ -55,7 +63,7 @@
 				var link = "mailto:cosmetics_and_more@me.com"
 						 + "?cc=" + unescape(mail)
 						 + "&subject=" + unescape(subject)
-						 + "&body=" + unescape(message)
+						 + "&body=" + unescape(message).replace(/\r?\n/g, "%0A")
 						 + escape("\n\n\n------------------------------------------\nKontaktdaten:\n\nName: \"") + unescape(name) + escape("\"\nRufnummer: \"") + number + escape("\"\nE-mail: \"") + mail + escape("\"\n------------------------------------------");
 						 ;
 				window.location.href = link;
@@ -77,7 +85,7 @@
 		<div id="form">
 			<ul>
 				<li><p>Ihr Name (Pflichtfeld)</p><input type="text" name="name" placeholder="Max Mustermann"></li>
-				<li><p>Ihre E-mail Adresse</p><input type="text" name="mail" placeholder="mustermann.max@beispiel.de"></li>
+				<li><p>Ihre E-mail Adresse (Pflichtfeld)</p><input type="text" name="mail" placeholder="mustermann.max@beispiel.de"></li>
 				<li><p>Ihre Rufnummer (Pflichtfeld)</p><input type="text" name="rufnummer" placeholder="+49 179 2947662"></li>
 				<li><p>Betreff (Pflichtfeld)</p><input type="text" name="betreff" placeholder="Termin vereinbaren"></li>
 				<li><p>Ihre Nachricht (Pflichtfeld)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihren Wunschtermin oder Ihr sonstiges Anliegen detailiert."></textarea></li>
