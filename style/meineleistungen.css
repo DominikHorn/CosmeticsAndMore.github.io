@@ -38,8 +38,25 @@
 #description {
 	clear: both;
 	text-align: justify;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+	padding-left: 3%;
+	padding-right: 5%;
+	font-size: 90%;
+}
+
+#descriptionParaffin {
+	clear: both;
+	text-align: justify;
+	padding-left: 3%;
+	padding-right: 5%;
+	font-size: 85%;
+}
+
+#warmwachs {
+	clear: both;
+	text-align: left;
+	list-style-type: none;
+	padding-left: 5%;
+	font-size: 95%;
 }
 
 #oneline {
@@ -70,19 +87,13 @@ h2 {
 	margin-bottom: 0.3em;
 }
 
-#warmwachs {
-	clear: both;
-	text-align: left;
-	list-style-type: none;
-	padding-left: 0.5em;
-}
-
 /* small screens */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.angebot {
 		margin: 0.5em 0.5em 0.5em 0.5em;
 		min-width: 370px;
 		max-width: 370px;
+		min-height: 500px;
 	}
 }
 
@@ -91,7 +102,7 @@ h2 {
 	.angebot {
 		max-width: 400px;
 		min-width: 250px;
-		min-height: 620px;
+		min-height: 500px;
 		margin: 1em 0.5em 1em 0.5em;
 		width: 500px;
 	}

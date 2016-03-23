@@ -9,31 +9,23 @@
 .imageBox {
 	display: inline-block;
 	margin: 1em;
-	box-shadow: 5px 5px 10px gray;
-	padding-bottom: 0px;
 }
 
 /* small screen */
 @media screen and (min-width: 1px) and (max-width: 899px) {
-	.imageBox {
-		height: 137px;
-		width: 199px;
-	}
-
 	.imageBox img {
 		width: 200px;
 		border-bottom: groove 10px #8FBF59;
+		box-shadow: 5px 5px 10px gray;
 	}
 }
 
 /* medium screens */
 @media screen and (min-width: 900px) {
-	.imageBox {
-		height: 256px;
-	}
 	.imageBox img {
 		border-bottom: groove 10px #8FBF59;
 		max-width: 512px;
 		max-height: 256px;
+		box-shadow: 5px 5px 10px gray;
 	}
 }
