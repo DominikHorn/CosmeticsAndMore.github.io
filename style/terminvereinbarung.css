@@ -21,7 +21,7 @@
 input {
 	padding: 10px;
 	border: solid 1px #8FBF59;
-	font-size: 130%;
+	font-size: 22px;
 	transition: box-shadow 0.5s, border 0.5s;
 }
 
@@ -38,7 +38,7 @@ input.error {
 textarea {
 	padding: 10px;
 	border: solid 1px #8FBF59;
-	font-size: 130%;
+	font-size: 22px;
 	transition: box-shadow 0.5s, border 0.5s;
 }
 

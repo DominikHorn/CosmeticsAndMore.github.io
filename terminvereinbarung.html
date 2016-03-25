@@ -7,93 +7,31 @@
 		<link href="style/format.css" rel="stylesheet" type="text/css">
 
 		<!-- Favicon stuff -->
-		<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/icons/favicon-194x194.png" sizes="194x194">
-		<link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/icons/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/icons/manifest.json">
-		<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#8fbf59">
-		<link rel="shortcut icon" href="/icons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="icons/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="icons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="icons/manifest.json">
+		<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#8fbf59">
+		<link rel="shortcut icon" href="icons/favicon.ico">
 		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="/icons/mstile-144x144.png">
-		<meta name="msapplication-config" content="/icons/browserconfig.xml">
+		<meta name="msapplication-TileImage" content="icons/mstile-144x144.png">
+		<meta name="msapplication-config" content="icons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 
-		<script>
-			function sendMail() {
-				var mailElement = document.getElementsByName('mail')[0];
-				var nameElement = document.getElementsByName('name')[0];
-				var numberElement = document.getElementsByName('rufnummer')[0];
-				var subjectElement = document.getElementsByName('betreff')[0];
-				var messageElement = document.getElementsByName('nachricht')[0];
-				mailElement.className = "";
-				nameElement.className = "";
-				numberElement.className = "";
-				subjectElement.className = "";
-				messageElement.className = "";
-
-				var mail = escape(mailElement.value);
-				var message = escape(messageElement.value);
-				var name = escape(nameElement.value);
-				var number = escape(numberElement.value);
-				var subject = escape(subjectElement.value);
-
-				if (!name || name === "") {
-					nameElement.className = "error";
-					nameElement.focus();
-
-					return;
-				}
-
-				if (!mail || mail === "") {
-					mailElement.className = "error";
-					mailElement.focus();
-
-					return;
-				}
-
-				if (!number || number === "") {
-					numberElement.className = "error";
-					numberElement.focus();
-
-					return;
-				}
-
-				if (!subject || subject === "") {
-					subjectElement.className = "error";
-					subjectElement.focus();
-
-					return;
-				}
-
-				if (!message || message === "") {
-					messageElement.className = "error";
-					messageElement.focus();
-
-					return;
-				}	
-
-				var link = "mailto:cosmetics_and_more@me.com"
-						 + "?cc=" + unescape(mail)
-						 + "&subject=" + unescape(subject)
-						 + "&body=" + unescape(message).replace(/\r?\n/g, "%0A")
-						 + escape("\n\n\n------------------------------------------\nKontaktdaten:\n\nName: \"") + unescape(name) + escape("\"\nRufnummer: \"") + number + escape("\"\nE-mail: \"") + mail + escape("\"\n------------------------------------------");
-						 ;
-				window.location.href = link;
-			}
-		</script>
+		<script src="scripts/terminvereinbarung.js"></script>
 	</head>
-	<body>
+	<body onload="onload()">
 		<nav class="navigation">
 			<img id="logo" src="img/logo.jpg">
 			<ul>
@@ -105,16 +43,18 @@
 			</ul>
 		</nav>
 
-		<div id="form">
+		<form id="form">
 			<ul>
-				<li><p>Ihr Name (Pflichtfeld)</p><input type="text" name="name" placeholder="Max Mustermann"></li>
-				<li><p>Ihre E-mail Adresse (Pflichtfeld)</p><input type="text" name="mail" placeholder="mustermann.max@beispiel.de"></li>
-				<li><p>Ihre Rufnummer (Pflichtfeld)</p><input type="text" name="rufnummer" placeholder="+49 179 2947662"></li>
-				<li><p>Betreff (Pflichtfeld)</p><input type="text" name="betreff" placeholder="Termin vereinbaren"></li>
-				<li><p>Ihre Nachricht (Pflichtfeld)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihren Wunschtermin oder Ihr sonstiges Anliegen detailiert."></textarea></li>
+				<li><p>Ihr Name</p><input type="text" name="name" placeholder="Max Mustermann"></li>
+				<li><p>Ihre E-mail Adresse</p><input type="email" name="mail" placeholder="mustermann.max@beispiel.de"></li>
+				<li><p>Ihre Rufnummer</p><input type="tel" name="rufnummer" placeholder="+49 179 2947662"></li>
+				<li><p>Datum</p><input type="date" name="date" value="1970-01-01"></li>
+				<li><p>Uhrzeit</p><input type="time" name="time" value="13:00"></li>
+				<li><p>Betreff</p><input type="text" name="betreff" value="Termin vereinbaren"></li>
+				<li><p>Ihre Nachricht (Optional)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihr Anliegen detailiert. Sollten Sie dieses Feld leer lassen wird automatisch eine Nachricht für sie aus den Daten oben generiert."></textarea></li>
 			</ul>
-			<button id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
-		</div>
+			<button type="submit" id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
+		</form>
 
 		<div id="kontakt">
 			<h2>Kontaktdaten:</h2>
