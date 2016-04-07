@@ -32,38 +32,45 @@
 		<script src="scripts/terminvereinbarung.js"></script>
 	</head>
 	<body onload="onload()">
-		<nav class="navigation">
-			<img id="logo" src="img/logo.jpg">
-			<ul>
-				<li><a href="index.html">STARTSEITE</a></li>
-				<li><a href="uebermich.html">ÜBER MICH</a></li>
-				<li><a href="galerie.html">GALERIE</a></li>
-				<li><a href="meineleistungen.html">MEINE LEISTUNGEN</a></li>
-				<li><a href="terminvereinbarung.html">TERMIN VEREINBAREN</a></li>
-			</ul>
-		</nav>
+		<div id="page">
+			<div id="content">
+				<nav class="navigation">
+					<img id="logo" src="img/logo.jpg">
+					<ul>
+						<li><a href="index.html">STARTSEITE</a></li>
+						<li><a href="uebermich.html">ÜBER MICH</a></li>
+						<li><a href="galerie.html">GALERIE</a></li>
+						<li><a href="meineleistungen.html">MEINE LEISTUNGEN</a></li>
+						<li><a href="terminvereinbarung.html">TERMIN VEREINBAREN</a></li>
+					</ul>
+				</nav>
 
-		<div id="kontakt">
-			<h2>Kontaktdaten:</h2>
-			<p>Katarzyna Thurand</p>
-			<p>Pretzfelder Strasse 15</p>
-			<p>81249 München</p>
-			<p>Telefon: +49 89 99757034</p>
-			<p>Mobil: +49 179 2947662</p>
-			<p>Email: cosmetics_and_more@me.com</p>
+				<div id="kontakt">
+					<h2>Kontaktdaten:</h2>
+					<p>Katarzyna Thurand</p>
+					<p>Pretzfelder Strasse 15</p>
+					<p>81249 München</p>
+					<p>Telefon: +49 89 99757034</p>
+					<p>Mobil: +49 179 2947662</p>
+					<p>Email: cosmetics_and_more@me.com</p>
+				</div>
+				<form id="form">
+					<ul>
+						<li><p>Ihr Name</p><input type="text" name="name" placeholder="Max Mustermann"></li>
+						<li><p>Ihre E-mail Adresse</p><input type="email" name="mail" placeholder="mustermann.max@beispiel.de"></li>
+						<li><p>Ihre Rufnummer</p><input type="tel" name="rufnummer" placeholder="+49 179 2947662"></li>
+						<li><p>Datum</p><input type="date" name="date" value="1970-01-01"></li>
+						<li><p>Uhrzeit</p><input type="time" name="time" value="13:00"></li>
+						<li><p>Betreff</p><input type="text" name="betreff" value="Termin vereinbaren"></li>
+						<li><p>Ihre Nachricht (Optional)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihr Anliegen detailiert. Sollten Sie dieses Feld leer lassen wird automatisch eine Nachricht für sie aus den Daten oben generiert."></textarea></li>
+					</ul>
+					<button type="submit" id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
+				</form>
+			</div>
+	
+			<div id="footer">
+				<a href="impressum.html">Impressum und Datenschutz</a>
+			</div>
 		</div>
-		<form id="form">
-			<ul>
-				<li><p>Ihr Name</p><input type="text" name="name" placeholder="Max Mustermann"></li>
-				<li><p>Ihre E-mail Adresse</p><input type="email" name="mail" placeholder="mustermann.max@beispiel.de"></li>
-				<li><p>Ihre Rufnummer</p><input type="tel" name="rufnummer" placeholder="+49 179 2947662"></li>
-				<li><p>Datum</p><input type="date" name="date" value="1970-01-01"></li>
-				<li><p>Uhrzeit</p><input type="time" name="time" value="13:00"></li>
-				<li><p>Betreff</p><input type="text" name="betreff" value="Termin vereinbaren"></li>
-				<li><p>Ihre Nachricht (Optional)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihr Anliegen detailiert. Sollten Sie dieses Feld leer lassen wird automatisch eine Nachricht für sie aus den Daten oben generiert."></textarea></li>
-			</ul>
-			<button type="submit" id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
-		</form>
-		<div class="impressum"><a href="impressum.html">Impressum und Datenschutz</a></div>
 	</body>
 </html>
