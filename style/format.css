@@ -134,25 +134,36 @@
 	}
 }
 
-.navigation a {
+a {
 	text-decoration: none;
 	font-family: 'Josefin Sans';
 }
 
-.navigation a:link {
+a:link {
 	color: gray;
 	transition: color 0.3s;
 }
 
-.navigation a:visited {
+a:visited {
 	color: gray;
 }
 
-.navigation a:hover {
+a:hover {
 	color: #8FBF59;
 	transition: color 0.3s;
 }
 
-.navigation a:active {
+a:active {
 	color: black;
+}
+
+.impressum {
+	border: dashed 2px #882D6A;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	margin-top: 50px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	font-size: 20px;
 }

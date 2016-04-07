@@ -129,7 +129,7 @@ textarea.error {
 
 	input {
 		max-width: 899px;
-		width: 80%;
+		width: 90%;
 	}
 }
 
@@ -150,7 +150,7 @@ textarea.error {
 	}
 
 	input {
-		width: 400px;
+		width: 500px;
 	}
 
 }

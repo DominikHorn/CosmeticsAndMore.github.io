@@ -1,0 +1,34 @@
+#kontakt {
+	text-align: center;
+	margin: 3em 1em 1em;
+	float: middle;
+}
+
+#kontakt h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+#kontakt p {
+	font-size: 1.5em;
+	line-height: 1.3em;
+}
+
+#impressum {
+	margin: 50px 1em 1em;
+	float: middle;
+}
+
+#impressum h2 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 0.5em;
+	margin-top: 30px;
+}
+
+#impressum p {
+	font-size: 1.5em;
+	line-height: 1.3em;
+	margin-left: 20px;
+	margin-right: 20px;
+}
