@@ -115,7 +115,7 @@ function sendMail() {
 		+ number
 		+ " oder unter meiner E-mail: " 
 		+ mail
-		+ escape(". Vielen Dank im Vorraus.\n\nMit freundlichen Gr")
+		+ escape(". Vielen Dank im Voraus.\n\nMit freundlichen Gr")
 		+ unescape("üß")
 		+ escape("en,\n")
 		+ unescape(name)
