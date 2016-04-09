@@ -14,7 +14,7 @@
 /* small screen */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.imageBox img {
-		width: 200px;
+		width: 90%;
 		border-bottom: groove 10px #8FBF59;
 		box-shadow: 5px 5px 10px gray;
 	}
