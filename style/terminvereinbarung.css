@@ -131,6 +131,19 @@ textarea.error {
 		max-width: 899px;
 		width: 90%;
 	}
+
+	#map {
+		width: 90%;
+		height: 500px;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+
+		border-style: groove;
+		border-color: #8FBF59;
+		border-width: 10px;
+	}
 }
 
 /* medium and large screens */
@@ -153,11 +166,24 @@ textarea.error {
 		width: 500px;
 	}
 
+
+	#map {
+		width: 850px;
+		height: 850px;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+
+		border-style: groove;
+		border-color: #8FBF59;
+		border-width: 10px;
+	}
 }
 
 #kontakt {
 	text-align: center;
-	margin: 3em 1em 1em;
+	margin: 3em 1em;
 	float: middle;
 }
 
