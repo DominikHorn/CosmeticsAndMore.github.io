@@ -63,16 +63,6 @@
 					</ul>
 				</nav>
 
-				<div id="kontakt">
-					<h2>Kontaktdaten:</h2>
-					<p>Katarzyna Thurand</p>
-					<p>Cosmetics and More</p>
-					<p>Pretzfelder Strasse 15</p>
-					<p>81249 München</p>
-					<p>Telefon: +49 89 99757034</p>
-					<p>Mobil: +49 179 2947662</p>
-					<p>Email: cosmetics_and_more@me.com</p>
-				</div>
 				<form id="form">
 					<ul>
 						<li><p>Ihr Name</p><input type="text" name="name" placeholder="Max Mustermann"></li>
@@ -84,10 +74,17 @@
 						<li><p>Ihre Nachricht (Optional)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihr Anliegen detailiert. Sollten Sie dieses Feld leer lassen wird automatisch eine Nachricht für sie aus den Daten oben generiert."></textarea></li>
 					</ul>
 					<button type="submit" id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
-				</form>
-
-				<div id="map"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:900px;width:900px;'><div id='gmap_canvas' style='height:900px;width:900px;'></div><div><small><a href="http://embedgooglemaps.com">									google maps karte erstellen							</a></small></div><div><small><a href="http://webtrafficgeeks.de/">traffic kaufen</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(48.15434672871845,11.41542897916791),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.15434672871845,11.41542897916791)});infowindow = new google.maps.InfoWindow({content:'<strong>Cosmetics and More</strong><br>Pretzfelder Straße 15, München, Deutschland<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-				</script></div>
+				</form>			
+				<div id="kontakt">
+					<h2>Kontaktdaten:</h2>
+					<p>Katarzyna Thurand</p>
+					<p>Cosmetics and More</p>
+					<p>Pretzfelder Strasse 15</p>
+					<p>81249 München</p>
+					<p>Telefon: +49 89 99757034</p>
+					<p>Mobil: +49 179 2947662</p>
+					<p>Email: cosmetics_and_more@me.com</p>
+				</div>
 			</div>
 	
 			<div id="footer">
