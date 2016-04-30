@@ -8,12 +8,21 @@
 	padding-top: 1em;
 }
 
+
+/* Welcome Banner */
+#welcomeBanner {
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 3.5em;
+}
+
 /* small screens (phones etc) */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.largeTextContainer {
 		width: auto;
-		margin-left: 3em;
-		margin-right: 3em;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
 		text-align: justify;
 		font-size: 1.5em;
 		overflow: hidden;
@@ -21,11 +30,10 @@
 
 	.largeImgContainer {
 		overflow: hidden;
-		margin-top: 50px;
 		width: auto;
 		text-align: center;
-		margin-left: 1.5em;
-		margin-right: 1.5em;
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 
 	.largeImgContainer img {
@@ -33,6 +41,7 @@
 		margin-right: 0.5em;
 		margin-bottom: 1em;
 		width: 90%;
+		max-width: 500px;
 
 		border-bottom-style: groove;
 		border-bottom-color: #8FBF59;
@@ -44,8 +53,10 @@
 	}
 
 	#welcomeBanner {
-		margin-left: 1.5em;
-		margin-right: 1.5em;
+		margin-left: 5%;
+		margin-right: 5%;
+		font-size: 2em;
+		font-weight: bold;
 	}
 }
 
@@ -124,12 +135,4 @@
 	.largeImgContainer li {
 		display: inline;
 	}
-}
-
-/* Welcome Banner */
-#welcomeBanner {
-	text-align: center;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	font-size: 3.5em;
 }
