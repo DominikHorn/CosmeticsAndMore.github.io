@@ -120,15 +120,21 @@ html, body {
 	}
 
 	.navigation ul {
-		padding-top: 50px;
-		float: left;
+		text-align: center;
 
 		font-size: 1.2em;
+	}
+
+	.navigation #nav {
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-top: 50px;
+		float: left;
+		width: 1040px;
 
 		border-bottom-width: 0.6cm;
 		border-bottom-style: solid;
 		border-color: #882D6A;
-		padding-bottom: 5px;
 	}
 
 	.navigation li {
