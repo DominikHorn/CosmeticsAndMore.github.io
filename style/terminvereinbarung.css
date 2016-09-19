@@ -3,6 +3,7 @@
 #form {
 	margin-top: 2em;
 	margin-left: 2em;
+	padding-top: 10px;
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
@@ -216,6 +217,7 @@ textarea.error {
 		margin-left: 0.5%;
 		margin-right: 2%;
 		float: right;
+		padding-top: 10px;
 	}
 
 	#map {
