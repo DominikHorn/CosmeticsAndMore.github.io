@@ -36,7 +36,7 @@
 		<link rel="alternate" hreflang="de-DE" href="http://www.cosmetics-and-more.de/" />
 
 		<!-- Google analytics tracking script -->
-		<script>
+		<script type="text/javascript">
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -46,10 +46,36 @@
 		  ga('send', 'pageview');
 		</script>
 
+		<!-- Resize script -->
+		<script type="text/javascript">
+			function load() {
+				// auto expand for big browsers
+				resize();
+
+				onload();
+			}
+
+			function resize() {
+				// auto expand for big browsers
+				var size = {
+				  width: window.innerWidth || document.body.clientWidth,
+				  height: window.innerHeight || document.body.clientHeight
+				}
+
+				if (size.width < 900) {
+					document.getElementById("details").removeAttribute("open");
+					document.getElementById("summary").style.display = "block";
+				} else {
+					document.getElementById("details").setAttribute("open", "open");
+					document.getElementById("summary").style.display = "none";
+				}
+			}
+		</script>
+
 		<!-- Size adjustements for mobile -->
 		<meta name=viewport content="width=device-width, initial-scale=1">
 	</head>
-	<body onload="onload()">
+	<body onload="load()" onresize="resize()">
 		<div id="page">
 			<div id="content">
 				<nav class="navigation">
@@ -59,42 +85,60 @@
 						<li><a href="uebermich.html">ÜBER MICH</a></li>
 						<li><a href="galerie.html">GALERIE</a></li>
 						<li><a href="meineleistungen.html">MEINE LEISTUNGEN</a></li>
-						<li><a href="terminvereinbarung.html">TERMIN VEREINBAREN</a></li>
+						<li><a href="terminvereinbarung.html">KONTAKT</a></li>
 					</ul>
 				</nav>
 
-				<form id="form">
-					<ul>
-						<li><p>Ihr Name</p><input type="text" name="name" placeholder="Max Mustermann"></li>
-						<li><p>Ihre E-mail Adresse</p><input type="email" name="mail" placeholder="mustermann.max@beispiel.de"></li>
-						<li><p>Ihre Rufnummer</p><input type="tel" name="rufnummer" placeholder="+49 179 2947662"></li>
-						<li><p>Datum</p><input type="date" name="date" value="1970-01-01"></li>
-						<li><p>Uhrzeit</p><input type="time" name="time" value="13:00"></li>
-						<li><p>Betreff</p><input type="text" name="betreff" value="Termin vereinbaren"></li>
-						<li><p>Ihre Nachricht (Optional)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihr Anliegen detailiert. Sollten Sie dieses Feld leer lassen wird automatisch eine Nachricht für sie aus den Daten oben generiert."></textarea></li>
-					</ul>
-					<button type="submit" id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
-				</form>			
-				<div id="kontakt">
-					<h2>Kontaktdaten:</h2>
-					<p>Katarzyna Thurand</p>
-					<p>Cosmetics and More</p>
-					<p>Pretzfelder Strasse 15</p>
-					<p>81249 München</p>
-					<p>Telefon: +49 89 99757034</p>
-					<p>Mobil: +49 179 2947662</p>
-					<p>Email: cosmetics_and_more@me.com</p>
-					<p><br><br>So finden Sie mich:</p>
+				<div id="form">
+					<details open id="details"><summary id="summary">Hier klicken, um online einen Termin zu vereinbaren</summary>
+						<form>
+							<ul>
+								<li><p>Ihr Name</p><input type="text" name="name" placeholder="Max Mustermann"></li>
+								<li><p>Ihre E-mail Adresse</p><input type="email" name="mail" placeholder="mustermann.max@beispiel.de"></li>
+								<li><p>Ihre Rufnummer</p><input type="tel" name="rufnummer" placeholder="+49 179 2947662"></li>
+								<li><p>Datum</p><input type="date" name="date" value="1970-01-01"></li>
+								<li><p>Uhrzeit</p><input type="time" name="time" value="13:00"></li>
+								<li><p>Betreff</p><input type="text" name="betreff" value="Termin vereinbaren"></li>
+								<li><p>Ihre Nachricht (Optional)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte nennen Sie Ihr Anliegen detailiert. Sollten Sie dieses Feld leer lassen wird automatisch eine Nachricht für sie aus den Daten oben generiert."></textarea></li>
+							</ul>
+							<button type="submit" id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
+						</form>		
+					</details>
 				</div>
 
-				<div id="map">
-					<div id="gmap_display" style="height:100%; width:100%; max-width:100%;">
-						<iframe style="height:100%; width:100%; border:0;" frameborder="0" 
-					src="https://www.google.com/maps/embed/v1/search?q=Cosmetics+and+More,+Pretzfelder+Straße,+München,+Deutschland&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+				<!-- Edge browser is a piece of shit. Detect and act accordingly ;D -->
+				<script type="text/javascript">
+					// Detect edge
+					if (window.navigator.userAgent.indexOf("Edge") > -1) {
+						document.getElementById("summary").style.display = "none";
+						document.getElementById("form").style.border = "none";
+						document.getElementById("form").style.padding.top = "0px";
+					}
+				</script>
+
+
+				<div id="data">
+					<div id="kontakt">
+						<h2>Kontaktdaten:</h2>
+						<p>Katarzyna Thurand</p>
+						<p>Cosmetics and More</p>
+						<p>Pretzfelder Strasse 15</p>
+						<p>81249 München</p>
+						<p>Telefon: +49 89 99757034</p>
+						<p>Mobil: +49 179 2947662</p>
+						<p>Email: cosmetics_and_more@me.com</p>
+						<p><br><br>So finden Sie mich:</p>
 					</div>
-					<a class="google-maps-html" rel="nofollow" href="https://www.interserver-coupons.com" id="get-map-data">interserver coupons</a>
-					<style>#gmap_display .text-marker{max-width:none!important;background:none!important;} img{max-width:none}</style>
-					<script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=460d16eb-3aad-885b-c379-90918de8a9b6&c=google-maps-html&u=1462033165" defer="defer" async="async"></script>
+
+					<div id="map">
+						<div id="gmap_display" style="height:100%; width:100%; max-width:100%;">
+							<iframe style="height:100%; width:100%; border:0;" frameborder="0" 
+						src="https://www.google.com/maps/embed/v1/search?q=Cosmetics+and+More,+Pretzfelder+Straße,+München,+Deutschland&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+						</div>
+						<a class="google-maps-html" rel="nofollow" href="https://www.interserver-coupons.com" id="get-map-data">interserver coupons</a>
+						<style>#gmap_display .text-marker{max-width:none!important;background:none!important;} img{max-width:none}</style>
+						<script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=460d16eb-3aad-885b-c379-90918de8a9b6&c=google-maps-html&u=1462033165" defer="defer" async="async"></script>
+					</div>
 				</div>
 			</div>
 			<div id="footer">
