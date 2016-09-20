@@ -65,6 +65,10 @@
 				if (size.width < 900) {
 					document.getElementById("details").removeAttribute("open");
 					document.getElementById("summary").style.display = "block";
+
+					// resize map
+					var mapElement = document.getElementById("map");
+					mapElement.style.height = "".concat(mapElement.style.pixelWidth).concat("px");
 				} else {
 					document.getElementById("details").setAttribute("open", "open");
 					document.getElementById("summary").style.display = "none";
