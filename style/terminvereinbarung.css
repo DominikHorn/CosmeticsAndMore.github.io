@@ -129,8 +129,8 @@ textarea.error {
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	#form {
 		width: auto;
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-left: 5%;
+		margin-right: 5%;
 		padding-right: 10px;
 
 		border-style: solid;
