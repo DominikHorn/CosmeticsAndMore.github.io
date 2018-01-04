@@ -9,6 +9,8 @@
 .imageBox {
 	display: inline-block;
 	margin: 1em;
+
+	animation: flyin 0.7s ease forwards;
 }
 
 /* small screen */

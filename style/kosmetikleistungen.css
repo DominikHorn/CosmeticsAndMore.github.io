@@ -14,6 +14,9 @@
 	display: inline-block;
 	vertical-align: bottom;
 	font-size: 1.5em;
+
+	animation: fadeIn 0.7s ease-in-out forwards;
+	visibility: visible !important;
 }
 
 #dauer {

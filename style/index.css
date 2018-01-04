@@ -8,7 +8,6 @@
 	padding-top: 1em;
 }
 
-
 /* Welcome Banner */
 #welcomeBanner {
 	text-align: center;
@@ -35,6 +34,8 @@
 		text-align: center;
 		margin-left: 1em;
 		margin-right: 1em;
+
+		animation: flyin 0.7s ease forwards;
 	}
 
 	.largeImgContainer img {
@@ -81,6 +82,8 @@
 		text-align: center;
 		margin-left: 1.5em;
 		margin-right: 1.5em;
+
+		animation: flyin 0.7s ease forwards;
 	}
 
 	.largeImgContainer img {
@@ -107,15 +110,6 @@
 
 /* large screens */
 @media screen and (min-width: 1300px) {
-	.largeTextContainer {
-		width: 1050px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: justify;
-		font-size: 1.5em;
-		line-height: 120%;
-	}
-
 	.largeImgContainer {
 		overflow: hidden;
 		margin-top: 50px;
@@ -123,6 +117,17 @@
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+
+	  animation: flyin 0.7s ease forwards;
+	}
+
+	.largeTextContainer {
+		width: 1050px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 1.5em;
+		line-height: 120%;
 	}
 
 	.largeImgContainer img {

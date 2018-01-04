@@ -1,6 +1,40 @@
 /* Spanish-Rose: #882D6A; */
 /* Green: #8FBF59; */
 
+/* Animations */
+@keyframes flyin {
+	0% {
+		opacity: 0;
+		transform: scale(1.25);
+		filter: blur(3px);
+	}
+  100% {
+		filter: blur(0);
+		transform: scale(1);
+		opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0.3);
+		opacity: 0.1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
 /* General Settings */
 @font-face {
 	font-family: 'Josefin-Sans';
