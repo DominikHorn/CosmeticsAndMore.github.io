@@ -6,6 +6,22 @@
    ===========================*/
 .largeImgContainer {
 	padding-top: 1em;
+
+	animation: flyin 0.7s ease forwards;
+	visibility: visible !important;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.largeImgContainer ul {
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.largeImgContainer li {
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.largeImgContainer img {
+	-webkit-transform: translate3d(0,0,0);
 }
 
 /* Welcome Banner */
@@ -35,9 +51,6 @@
 		margin-left: 1em;
 		margin-right: 1em;
 
-		animation: flyin 0.7s ease forwards;
-		visibility: visible !important;
-		-webkit-backface-visibility: hidden;
 	}
 
 	.largeImgContainer img {
@@ -84,11 +97,6 @@
 		text-align: center;
 		margin-left: 1.5em;
 		margin-right: 1.5em;
-
-		animation: flyin 0.7s ease forwards;
-		visibility: visible !important;
-		-webkit-backface-visibility: hidden;
-		-webkit-transform: translateZ(0);
 	}
 
 	.largeImgContainer img {
@@ -122,10 +130,6 @@
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
-
-	  animation: flyin 0.7s ease forwards;
-		visibility: visible !important;
-		-webkit-backface-visibility: hidden;
 	}
 
 	.largeTextContainer {

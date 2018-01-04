@@ -12,8 +12,11 @@
 
 	animation: flyin 0.7s ease forwards;
 	visibility: visible !important;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateZ(0);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.imageBox img {
+	-webkit-transform: translate3d(0,0,0);
 }
 
 /* small screen */
