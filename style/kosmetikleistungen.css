@@ -95,8 +95,8 @@ h2 {
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.angebot {
 		margin: 0.5em 0.5em 0.5em 0.5em;
-		min-width: 430px;
-		max-width: 430px;
+		min-width: 90%;
+		max-width: 90%;
 	}
 }
 
