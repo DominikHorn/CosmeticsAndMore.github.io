@@ -16,6 +16,7 @@
 
 	animation: fadeIn 0.7s ease-in-out forwards;
 	visibility: visible !important;
+	-webkit-backface-visibility: hidden;
 }
 
 .angebot2 {
@@ -29,6 +30,7 @@
 
 	animation: fadeIn 0.7s ease-in-out forwards;
 	visibility: visible !important;
+	-webkit-backface-visibility: hidden;
 }
 
 #stack {

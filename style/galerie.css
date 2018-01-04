@@ -11,6 +11,7 @@
 	margin: 1em;
 
 	animation: flyin 0.7s ease forwards;
+	-webkit-backface-visibility: hidden;
 }
 
 /* small screen */

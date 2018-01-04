@@ -36,6 +36,7 @@
 		margin-right: 1em;
 
 		animation: flyin 0.7s ease forwards;
+		-webkit-backface-visibility: hidden;
 	}
 
 	.largeImgContainer img {
@@ -84,6 +85,7 @@
 		margin-right: 1.5em;
 
 		animation: flyin 0.7s ease forwards;
+		-webkit-backface-visibility: hidden;
 	}
 
 	.largeImgContainer img {
@@ -119,6 +121,7 @@
 		margin-right: auto;
 
 	  animation: flyin 0.7s ease forwards;
+		-webkit-backface-visibility: hidden;
 	}
 
 	.largeTextContainer {

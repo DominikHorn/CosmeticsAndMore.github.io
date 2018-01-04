@@ -7,6 +7,7 @@ p {
 #profile {
 	animation: slideRight 0.7s ease-in-out;
 	visibility: visible !important;
+	-webkit-backface-visibility: hidden;
 }
 
 /* Small displays */
