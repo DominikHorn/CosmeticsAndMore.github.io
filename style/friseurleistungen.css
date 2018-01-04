@@ -1,0 +1,121 @@
+/* Spanish-Rose: #882D6A; */
+/* Green: #8FBF59; */
+
+.angebote {
+	text-align: center;
+	margin-top: 1em;
+}
+
+.angebot {
+	padding: 1em 0.5em 1em 0.5em;
+	border: dashed 2px #882D6A;
+	border-left: dashed 2px #882D6A;
+	font-size: 1.2em;
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 1.5em;
+}
+
+.angebot2 {
+	padding: 1em 0.5em 1em 0.5em;
+	border: dashed 2px #882D6A;
+	border-left: dashed 2px #882D6A;
+	font-size: 1.2em;
+	display: inline-block;
+	float: right;
+	clear: right;
+	font-size: 1.5em;
+}
+
+#stack {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#dauer {
+	float: left;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	padding-left: 0.5em;
+}
+
+#preis {
+	float: right;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	padding-right: 0.5em;
+}
+
+#tablePreis {
+	float: right;
+	padding-right: 0.5em;
+	font-weight: bold;
+}
+
+#description {
+	clear: both;
+	text-align: justify;
+	padding-left: 3%;
+	padding-right: 5%;
+	font-size: 90%;
+}
+
+#oneline {
+	margin-bottom:  1em;
+}
+
+#twoline {
+	margin-bottom: 1.75em;
+}
+
+#threeline {
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	text-align: center;
+	color: #8FBF59;
+}
+
+#default {
+	clear: both;
+	text-align: left;
+	list-style-type: none;
+	padding-left: 0.5em;
+}
+
+.angebot li {
+	margin-bottom: 0.3em;
+}
+
+.angebot2 li {
+	margin-bottom: 0.3em;
+}
+
+/* small screens */
+@media screen and (min-width: 1px) and (max-width: 899px) {
+	.angebot {
+		margin: 0.5em 0.5em 0.5em 0.5em;
+		min-width: 450px;
+		max-width: 450px;
+		min-height: 500px;
+	}
+}
+
+/* medium and large screens */
+@media screen and (min-width: 900px) {
+	.angebot {
+		max-width: 450px;
+		min-width: 300px;
+		min-height: 400px;
+		margin: 1em 0.5em 1em 0.5em;
+		width: 500px;
+	}
+
+	.angebot2 {
+		max-width: 500px;
+		min-width: 450px;
+		min-height: 381px;
+		margin: 1em 0.5em 1em 0.5em;
+	}
+}

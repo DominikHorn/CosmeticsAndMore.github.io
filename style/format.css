@@ -34,7 +34,7 @@ html, body {
 }
 
 /* ==============================================
-   Navigation element, default browser experience 
+   Navigation element, default browser experience
    ==============================================*/
 
 /* low width */
@@ -99,7 +99,7 @@ html, body {
 		display: inline;
 		margin-left: 0.5em;
 		margin-right: 0.5em;
-		font-size: 21px;
+		font-size: 18px;
 	}
 }
 
@@ -121,8 +121,7 @@ html, body {
 
 	.navigation ul {
 		text-align: center;
-
-		font-size: 1.2em;
+		font-size: 1.015em;
 	}
 
 	.navigation #nav {
@@ -188,5 +187,5 @@ a:active {
 	height: 50px;
 	width: 100%;
 	padding: 10px 10px 10px 10px;
-	
+	margin: 1px 1px 1px 1px;
 }

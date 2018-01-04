@@ -26,6 +26,7 @@
 		text-align: justify;
 		font-size: 1.5em;
 		overflow: hidden;
+		line-height: 120%;
 	}
 
 	.largeImgContainer {
@@ -70,11 +71,12 @@
 		text-align: justify;
 		font-size: 1.7em;
 		overflow: hidden;
+		line-height: 120%;
 	}
 
 	.largeImgContainer {
 		overflow: hidden;
-		margin-top: 50px;
+		margin-top: 1em;
 		width: auto;
 		text-align: center;
 		margin-left: 1.5em;
@@ -111,6 +113,7 @@
 		margin-right: auto;
 		text-align: justify;
 		font-size: 1.5em;
+		line-height: 120%;
 	}
 
 	.largeImgContainer {
