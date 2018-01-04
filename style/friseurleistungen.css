@@ -10,7 +10,6 @@
 	padding: 1em 0.5em 1em 0.5em;
 	border: dashed 2px #882D6A;
 	border-left: dashed 2px #882D6A;
-	font-size: 1.2em;
 	display: inline-block;
 	vertical-align: bottom;
 	font-size: 1.5em;
@@ -23,7 +22,6 @@
 	padding: 1em 0.5em 1em 0.5em;
 	border: dashed 2px #882D6A;
 	border-left: dashed 2px #882D6A;
-	font-size: 1.2em;
 	display: inline-block;
 	float: right;
 	clear: right;
@@ -104,13 +102,17 @@ h2 {
 		margin: 0.5em 0.5em 0.5em 0.5em;
 		min-width: 90%;
 		max-width: 90%;
-		min-height: 500px;
+		font-size: 1em;
+	}
+
+	#stack {
+		width: 100%;
 	}
 
 	.angebot2 {
-		margin: 0.5em 0.5em 0.5em 0.5em;
-		min-width: 450px;
-		max-width: 450px;
+		margin: 0.5em 5% 0.5em 5%;
+		min-width: 90%;
+		font-size: 1em;
 	}
 }
 

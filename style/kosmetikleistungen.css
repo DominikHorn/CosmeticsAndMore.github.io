@@ -13,7 +13,6 @@
 	font-size: 1.2em;
 	display: inline-block;
 	vertical-align: bottom;
-	font-size: 1.5em;
 
 	animation: fadeIn 0.7s ease-in-out forwards;
 	visibility: visible !important;
@@ -47,20 +46,12 @@
 	font-size: 90%;
 }
 
-#descriptionParaffin {
-	clear: both;
-	text-align: justify;
-	padding-left: 3%;
-	padding-right: 5%;
-	font-size: 85%;
-}
-
 #warmwachs {
 	clear: both;
 	text-align: left;
 	list-style-type: none;
 	padding-left: 5%;
-	font-size: 95%;
+	font-size: 90%;
 }
 
 #oneline {
@@ -93,20 +84,30 @@ h2 {
 
 /* small screens */
 @media screen and (min-width: 1px) and (max-width: 899px) {
+	h2 {
+		font-size: 1.2em;
+	}
+
 	.angebot {
 		margin: 0.5em 0.5em 0.5em 0.5em;
 		min-width: 90%;
 		max-width: 90%;
+		font-size: 1em;
 	}
 }
 
 /* medium and large screens */
 @media screen and (min-width: 900px) {
+	h2 {
+		font-size: 2em;
+	}
+
 	.angebot {
 		max-width: 407px;
 		min-width: 407px;
-		min-height: 410px;
+		min-height: 400px;
 		margin: 1em 0.5em 1em 0.5em;
 		width: 500px;
+		font-size: 1.3em;
 	}
 }
