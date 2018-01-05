@@ -214,7 +214,7 @@ textarea.error {
 		display: inline-block;
 		width: 47.5%;
 		height: 1085px;
-		margin-top: 2em;
+		margin-top: 1em;
 		margin-left: 0.5%;
 		margin-right: 2%;
 		float: right;
@@ -222,13 +222,14 @@ textarea.error {
 	}
 
 	#map {
-		width: 96%;
-		height: 700px;
+		width: 95%;
+		height: 77.5vh;
 		overflow: hidden;
 		margin-left: 2%;
 		margin-right: 2%;
 		margin-top: 2%;
 		display: inline-block;
+		float:top;
 
 		border-style: groove;
 		border-color: #8FBF59;
