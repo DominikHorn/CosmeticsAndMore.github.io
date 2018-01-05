@@ -2,8 +2,8 @@
 /* Green: #8FBF59; */
 
 .angebote {
-	text-align: center;
 	margin-top: 1em;
+	text-align: center; /* this centers all boxes. TODO: rework (with grid layout ?!) */
 }
 
 .angebot {
@@ -15,6 +15,16 @@
 
 	animation: fadeIn 0.7s ease-in-out forwards;
 	visibility: visible !important;
+}
+
+.angebot ul {
+	list-style: none;
+}
+
+.tablePreis {
+	float: right;
+	padding-right: 0.5em;
+	font-weight: bold;
 }
 
 #dauer {
@@ -31,67 +41,55 @@
 	padding-right: 0.5em;
 }
 
-#tablePreis {
-	float: right;
-	padding-right: 0.5em;
-	font-weight: bold;
-}
-
 #description {
 	clear: both;
 	text-align: justify;
 	padding-left: 3%;
 	padding-right: 5%;
-	font-size: 90%;
-}
-
-#warmwachs {
-	clear: both;
-	text-align: left;
-	list-style-type: none;
-	padding-left: 5%;
-	font-size: 90%;
-}
-
-#oneline {
-	margin-bottom:  1.7em;
-}
-
-#twoline {
-	margin-bottom: 1.75em;
-}
-
-#threeline {
-	margin-bottom: 0.5em;
 }
 
 h2 {
 	text-align: center;
+	margin-bottom: 1em;
 	color: #8FBF59;
 }
 
-#default {
+.angebot li {
+	line-height: 130%;
+}
+
+.angebot ul {
 	clear: both;
 	text-align: left;
 	list-style-type: none;
 	padding-left: 0.5em;
 }
 
-.angebot li {
-	margin-bottom: 0.3em;
+/* very small screens */
+@media screen and (max-width 321px) {
+	h2 {
+		font-size: 3em;
+		color: #111111;
+	}
+
+	.angebot {
+			margin: 20pt 20pt 20pt 20pt;
+			font-size: 30pt;
+			background-color: blue;
+	}
 }
 
 /* small screens */
-@media screen and (min-width: 1px) and (max-width: 899px) {
+@media screen and (min-width: 322px) and (max-width: 899px) {
 	h2 {
-		font-size: 1.2em;
+		font-size: 1.6em;
 	}
 
 	.angebot {
 		margin: 0.5em 0.5em 0.5em 0.5em;
 		min-width: 90%;
 		max-width: 90%;
-		font-size: 1em;
+		font-size: 1.4em;
 	}
 }
 

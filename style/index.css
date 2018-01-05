@@ -5,8 +5,6 @@
    		   image rondel
    ===========================*/
 .largeImgContainer {
-	padding-top: 1em;
-
 	animation: flyin 0.7s ease forwards;
 	visibility: visible !important;
 	-webkit-transform: translate3d(0,0,0);

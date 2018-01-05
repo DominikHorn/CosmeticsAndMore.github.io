@@ -8,7 +8,7 @@
 
 .imageBox {
 	display: inline-block;
-	margin: 1em;
+	margin: 1em 1em 0em 1em;
 
 	animation: flyin 0.7s ease forwards;
 	visibility: visible !important;

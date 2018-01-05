@@ -67,11 +67,60 @@ html, body {
 	height: 100%;
 }
 
+
+a {
+	text-decoration: none;
+	font-family: 'Josefin Sans';
+}
+
+a:link {
+	color: gray;
+	transition: color 0.3s;
+}
+
+a:visited {
+	color: gray;
+}
+
+a:hover {
+	color: #8FBF59;
+	transition: color 0.3s;
+}
+
+a:active {
+	color: black;
+}
+
+/* Premade classes for content layout purposes */
+.page {
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content {
+	/* Nothing to do atm */
+}
+
+.footer {
+	border: dashed 2px #882D6A;
+	font-size: 20px;
+	text-align: center;
+
+	height: 50px;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	margin: 1em 1px 1px 1px;
+}
+
 /* ==============================================
    Navigation element, default browser experience
    ==============================================*/
 
-/* low width */
+/* TODO rework! */
+
+/* small screens */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.navigation {
 		overflow: auto;
@@ -148,14 +197,13 @@ html, body {
 	}
 
 	.navigation img {
-		width: 220px;
+		width: 200px;
 		height: 110px;
 		float: left;
 	}
 
 	.navigation ul {
 		text-align: center;
-		font-size: 1.015em;
 	}
 
 	.navigation #nav {
@@ -165,61 +213,14 @@ html, body {
 		float: left;
 		width: 1040px;
 
-		border-bottom-width: 0.6cm;
+		border-bottom-width: 0.5cm;
 		border-bottom-style: solid;
 		border-color: #882D6A;
 	}
 
 	.navigation li {
 		display: inline;
-		margin-left: 1.5em;
-		font-size: 1.2em;
+		margin-left: 30px;
+		font-size: 14pt;
 	}
-}
-
-a {
-	text-decoration: none;
-	font-family: 'Josefin Sans';
-}
-
-a:link {
-	color: gray;
-	transition: color 0.3s;
-}
-
-a:visited {
-	color: gray;
-}
-
-a:hover {
-	color: #8FBF59;
-	transition: color 0.3s;
-}
-
-a:active {
-	color: black;
-}
-
-#page {
-	position: relative;
-	min-height: 100%;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#content {
-	padding-bottom: 125px;
-}
-
-#footer {
-	border: dashed 2px #882D6A;
-	font-size: 20px;
-	text-align: center;
-
-	position: absolute;
-	bottom: 0;
-	height: 50px;
-	width: 100%;
-	padding: 10px 10px 10px 10px;
-	margin: 1px 1px 1px 1px;
 }
