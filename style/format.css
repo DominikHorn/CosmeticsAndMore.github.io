@@ -118,14 +118,12 @@ a:active {
    Navigation element, default browser experience
    ==============================================*/
 
-/* TODO rework! */
-
 /* small screens */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.navigation {
 		overflow: auto;
 		text-align: center;
-		border-bottom-width: 5px;
+		border-bottom-width: 3px;
 		border-bottom-color: #882D6A;
 		border-bottom-style: solid;
 	}
@@ -140,24 +138,47 @@ a:active {
 	}
 
 	.navigation ul {
-		padding-top: 10px;
+		padding: 10px 0px 10px 0px;
 	}
 
 	.navigation li {
-		border-top-width: 5px;
+		list-style: none;
+		font-size: 4.7vw;
+		line-height: 5.5vw;
+	}
+
+	.navigation #nav {
+		border-top-width: 3px;
 		border-top-color: #882D6A;
 		border-top-style: solid;
-		padding-top: 0.25em;
-		padding-bottom: 0.25em;
-		font-size: 1.2em;
+	}
+
+	.navigation .left {
+		float: left;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		border-right-width: 3px;
+		border-right-color: #882D6A;
+		border-right-style: solid;
+	}
+
+	.navigation .right {
+		float: right;
+		padding-right: 15px;
 	}
 }
 
 /* medium screens */
 @media screen and (min-width: 900px) and (max-width: 1299px) {
 	.navigation {
-		overflow: auto;
 		text-align: center;
+	}
+
+	.navigation #nav {
+		border-bottom-width: 0.5cm;
+		border-bottom-style: solid;
+		border-color: #882D6A;
 	}
 
 	.navigation img {
@@ -170,12 +191,7 @@ a:active {
 	}
 
 	.navigation ul {
-		padding-top: 10px;
-
-		border-bottom-width: 0.6cm;
-		border-bottom-style: solid;
-		border-color: #882D6A;
-		padding-bottom: 5px;
+		display: inline;
 	}
 
 	.navigation li {
@@ -204,23 +220,24 @@ a:active {
 
 	.navigation ul {
 		text-align: center;
+		display: inline;
 	}
 
 	.navigation #nav {
-		margin-left: 20px;
-		margin-right: 20px;
-		padding-top: 50px;
+		margin-left: 15px;
+		padding-top: 57px;
 		float: left;
-		width: 1040px;
+		width: 1070px;
 
-		border-bottom-width: 0.5cm;
+		border-bottom-width: 0.4cm;
 		border-bottom-style: solid;
 		border-color: #882D6A;
 	}
 
 	.navigation li {
 		display: inline;
-		margin-left: 30px;
-		font-size: 14pt;
+		margin-left: 20px;
+		font-size: 16pt;
+		line-height: 24pt;
 	}
 }
