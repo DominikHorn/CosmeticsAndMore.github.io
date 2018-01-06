@@ -330,6 +330,10 @@ a:active {
 	  transition: all 200ms ease-in;
 	}
 
+	.menulabel:hover {
+		background-color: #999;
+	}
+
 	.menuinput[type="checkbox"] {
 	  display:none;
 	}
@@ -342,6 +346,7 @@ a:active {
 
 	.menuinput[type="checkbox"]:checked ~ .menulabel {
 	  left:260px;
+		background-color: #882D6A;
 	}
 
 	.menuinput[type="checkbox"]:checked ~ .bar {
