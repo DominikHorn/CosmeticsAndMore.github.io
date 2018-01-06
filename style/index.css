@@ -117,7 +117,7 @@
 @media screen and (min-width: 1300px) {
 	.largeImgContainer {
 		overflow: hidden;
-		margin-top: 50px;
+		margin-top: 20px;
 		width: 1075px;
 		text-align: center;
 		margin-left: auto;
