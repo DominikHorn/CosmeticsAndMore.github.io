@@ -89,13 +89,14 @@ h2 {
 /* large screens */
 @media screen and (min-width: 900px) {
 	h2 {
-		font-size: 2em;
+		font-size: 30pt;
 	}
 
 	.box {
 		width: 400px;
 		min-height: 460px;
 		margin: 1em 0.5em 1em 0.5em;
-		font-size: 1.4em;
+		font-size: 1.55em;
+		line-height: 1.7em;
 	}
 }

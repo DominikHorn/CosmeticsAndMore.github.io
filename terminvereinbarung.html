@@ -48,6 +48,8 @@
 
 		<!-- Resize script -->
 		<script type="text/javascript">
+			window.onresize = resize;
+
 			function resize() {
 				// auto expand for big browsers
 				var size = {
@@ -63,7 +65,7 @@
 					var mapElement = document.getElementById("map");
 					mapElement.style.height = "".concat(mapElement.style.pixelWidth).concat("px");
 				} else {
-					document.getElementById("details").setAttribute("open", "open");
+					document.getElementById("details").setAttribute("open", "");
 					document.getElementById("summary").style.display = "none";
 				}
 			}

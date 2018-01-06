@@ -1,13 +1,5 @@
 /* Spanish-Rose: #882D6A; */
 /* Green: #8FBF59; */
-#form {
-	margin-top: 2em;
-	margin-left: 2em;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-bottom: 10px;
-}
-
 #form summary {
 	font-size: 150%;
 	display: block;
@@ -32,6 +24,20 @@
 	margin-bottom: 0.3em;
 	margin-top: 1em;
 	font-size: 150%;
+}
+
+#kontakt {
+	text-align: center;
+}
+
+#kontakt h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+#kontakt p {
+	font-size: 1.5em;
+	line-height: 1.3em;
 }
 
 input {
@@ -71,19 +77,21 @@ textarea.error {
 #button {
 	display: inline-block;
 	background-color: #8FBF59;
-	border: none;
 	color: white;
-	padding: 15px 32px;
+
+	outline: none;
+	border-radius: 8px;
+	border: none;
+
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.3em;
-	border-radius: 8px;
-	outline: none;
+
+	padding: 15px 32px;
 	margin-top: 30px;
-	margin-left: -3px;
 
 	/* hover animation stuff */
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #button span {
@@ -125,13 +133,22 @@ textarea.error {
 	outline: none;
 }
 
+#bigInput {
+	height: 300px;
+}
+
+#map {
+	overflow: hidden;
+	border-style: groove;
+	border-color: #8FBF59;
+}
+
 /* low width */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	#form {
+		margin: 2em 5% 0 5%;
+		padding: 10px 10px 10px 10px;
 		width: auto;
-		margin-left: 5%;
-		margin-right: 5%;
-		padding-right: 10px;
 
 		border-style: solid;
 		border-width: 2px;
@@ -141,14 +158,12 @@ textarea.error {
 	#button {
 		max-width: 899px;
 		width: 100%;
-		margin-left: auto;
-		margin-right: auto
+		margin-left: 0 auto 0 auto;
 	}
 
 	#bigInput {
 		max-width: 899px;
 		width: 100%;
-		height: 300px;
 	}
 
 	input {
@@ -157,96 +172,70 @@ textarea.error {
 	}
 
 	#kontakt {
-		margin: 3em 1em;
-		margin-bottom: 0px;
+		margin: 3em 1em 0px 0;
 	}
 
 	#map {
-		width: 90%;
-		height: 500px;
-		overflow: hidden;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 20px;
+		width: 90vw;
+		height: 90vw;
+		margin: 20px auto 0 auto;
 
-		border-style: groove;
-		border-color: #8FBF59;
 		border-width: 10px;
 	}
 }
 
 /* medium and large screens */
 @media screen and (min-width: 900px) {
-	#form {
-		overflow: auto;
-		width: 47.5%;
-		margin-left: 2%;
-		margin-right: 0.5%;
-		padding-right: 0px;
-		display: inline-block;
+	.footer {
+
 	}
 
-	#form ul {
-		margin-left: 1%;
+
+	#form {
+		margin: 2em 0.5% 0 2%;
+		padding: 10px 0px 10px 10px;
+		width: 47.5%;
+
+		overflow: auto;
+		display: inline-block;
+		float: left;
 	}
 
 	#button {
+		max-width: unset;
 		width: 97%;
-		margin-left: 1%;
-		margin-right: 1%;
+		margin: 30px 1% 0 1%;
 	}
 
 	#bigInput {
+		max-width: unset;
 		width: 98%;
-		height: 300px;
 	}
 
 	input {
+		max-width: unset;
 		width: 98%;
 	}
 
 	#kontakt {
-		margin-left: 3%;
-		margin-top: 30px;
+		margin-top: 30px 0 0 3%;
 	}
 
 	#data {
 		display: inline-block;
 		width: 47.5%;
 		height: 1085px;
-		margin-top: 1em;
-		margin-left: 0.5%;
-		margin-right: 2%;
+		margin: 1em 2% 0 0.5%;
 		float: right;
 		padding-top: 10px;
 	}
 
 	#map {
-		width: 95%;
-		height: 77.5vh;
-		overflow: hidden;
-		margin-left: 2%;
-		margin-right: 2%;
-		margin-top: 2%;
+		width: 47vw;
+		height: 650px;
+		margin: 2% 2% 0 2%;
 		display: inline-block;
-		float:top;
 
-		border-style: groove;
-		border-color: #8FBF59;
 		border-width: 2px;
 	}
-}
-
-#kontakt {
-	text-align: center;
-}
-
-#kontakt h2 {
-	font-size: 2em;
-	margin-bottom: 0.5em;
-}
-
-#kontakt p {
-	font-size: 1.5em;
-	line-height: 1.3em;
 }
