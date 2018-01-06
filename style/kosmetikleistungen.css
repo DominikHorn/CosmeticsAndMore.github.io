@@ -54,6 +54,10 @@ h2 {
 
 /* small screens */
 @media screen and (max-width: 599px) {
+	.content {
+		margin-top: 70px;
+	}
+	
 	h2 {
 		font-size: 20pt;
 	}
