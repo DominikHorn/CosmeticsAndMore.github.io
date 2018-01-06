@@ -48,13 +48,6 @@
 
 		<!-- Resize script -->
 		<script type="text/javascript">
-			function load() {
-				// auto expand for big browsers
-				resize();
-
-				onload();
-			}
-
 			function resize() {
 				// auto expand for big browsers
 				var size = {
@@ -79,7 +72,7 @@
 		<!-- Size adjustements for mobile -->
 		<meta name=viewport content="width=device-width, initial-scale=1">
 	</head>
-	<body onload="load()">
+	<body>
 		<div class="page">
 			<div class="content">
 				<nav class="navigation">
@@ -115,7 +108,7 @@
 					</details>
 				</div>
 				<script type="text/javascript">
-					load();
+					resize();
 				</script>
 
 				<!-- Edge browser is a piece of shit. Detect and act accordingly ;D -->
