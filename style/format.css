@@ -258,6 +258,9 @@ a:active {
 	}
 
 	nav {
+		filter: blur(5px);
+		opacity: 0;
+
 	  position:fixed;
 	  top:0;
 	  left:0;
@@ -333,6 +336,8 @@ a:active {
 
 	input[type="checkbox"]:checked ~ nav {
 	  margin:0;
+		filter:blur(0px);
+		opacity:1;
 	}
 
 	input[type="checkbox"]:checked ~ label {
@@ -386,7 +391,7 @@ a:active {
 	}
 
 	nav img {
-		max-width: 25%;
+		max-width: 15%;
 		min-width: 150px;
 		min-height: 75px;
 		height: auto;
