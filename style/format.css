@@ -141,7 +141,7 @@ a:active {
 }
 
 /* Premade classes for content layout purposes */
-/*.page {
+.page {
 	position: relative;
 	min-height: 100%;
 	width: 100%;
@@ -149,9 +149,8 @@ a:active {
 }
 
 .content {
-	padding-bottom: 100px;
 	overflow: auto;
-}*/
+}
 
 .footer {
 	border: dashed 2px #882D6A;
@@ -173,7 +172,11 @@ a:active {
    ==============================================*/
 
 /* small screens */
-@media screen and (min-width: 1px) and (max-width: 599px) {
+@media screen and (min-width: 1px) and (max-width: 899px) {
+	.content {
+		margin-top: 60px;
+	}
+
 	#imp {
 		display: block;
 	}
@@ -199,9 +202,9 @@ a:active {
 	.bar h1 {
 		color: #666;
 		font-family: 'Annabelle';
-		font-size: 7.5vw;
-		margin-top: 16px;
-		margin-left: 73px;
+		font-size: 35px;
+		margin-top: 10px;
+		text-align: center;
 	}
 
 	.page {
@@ -346,8 +349,55 @@ a:active {
 
 
 /* medium screens */
-@media screen and (min-width: 600px) and (max-width: 1299px) {
+@media screen and (min-width: 900px) and (max-width: 1299px) {
+	input {
+		display: none;
+	}
 
+	label {
+		display: none;
+	}
+
+	.bar {
+		display: none;
+	}
+
+	nav {
+		overflow: auto;
+		text-align: center;
+
+		border-bottom-width: 5px;
+		border-bottom-color: #882D6A;
+		border-bottom-style: solid;
+	}
+
+	nav img {
+		max-width: 25%;
+		min-width: 150px;
+		min-height: 75px;
+		height: auto;
+		width: auto\9;	/*i8 fix*/
+		margin: 0 auto;
+ 	}
+
+	nav ul {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		overflow: auto;
+
+		border-top-width: 5px;
+		border-top-color: #882D6A;
+		border-top-style: solid;
+	}
+
+	nav li {
+		display: inline-block;
+		margin: 0px 5px 0px 5px;
+
+		list-style: none;
+		font-size: 13.5pt;
+		line-height: 14pt;
+ 	}
 }
 
 /* large screens */

@@ -1,12 +1,6 @@
-@media screen and (max-width: 599px) {
-	.content {
-		margin-top: 80px;
-	}
-}
-
 #kontakt {
 	text-align: center;
-	margin: 3em 1em 1em;
+	margin: 1em 1em 1em;
 	float: middle;
 }
 
@@ -21,7 +15,7 @@
 }
 
 #impressum {
-	margin: 50px 1em 1em;
+	margin: 20px 1em 1em;
 	float: middle;
 }
 

@@ -40,10 +40,6 @@
 
 /* small screens (phones etc) */
 @media screen and (min-width: 1px) and (max-width: 899px) {
-	.content {
-		margin-top: 60px;
-	}
-
 	.largeTextContainer {
 		width: auto;
 		margin-left: 10%;

@@ -155,12 +155,8 @@ textarea.error {
 
 /* low width */
 @media screen and (min-width: 1px) and (max-width: 899px) {
-	.content {
-		margin-top: 80px;
-	}
-
 	#form {
-		margin: 40px 5% 0 5%;
+		margin: 20px 5% 0 5%;
 		padding: 10px 10px 10px 10px;
 		width: auto;
 

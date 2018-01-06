@@ -53,10 +53,6 @@ h2 {
 
 /* small screens */
 @media screen and (min-width: 1px) and (max-width: 599px) {
-	.content {
-			margin-top: 70px;
-	}
-
 	.box {
 		margin: 10px 10px 10px 10px;
 		min-width: 90%;

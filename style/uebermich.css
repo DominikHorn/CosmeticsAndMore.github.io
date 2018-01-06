@@ -9,10 +9,6 @@ p {
 
 /* very small displays */
 @media screen and (max-width: 599px) {
-	.content {
-		margin-top: 60px;
-	}
-
 	p {
 		font-size: 5vw;
 		line-height: 6vw;
@@ -25,7 +21,6 @@ p {
 	}
 
 	#profile {
-		margin-top: 10px;
 		margin-bottom: 30px;
 		text-align: center;
 	}
