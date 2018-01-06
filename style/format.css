@@ -306,7 +306,7 @@ a:active {
 	  background: #DDD;
 	}
 
-	label {
+	.menulabel {
 	  display: block;
 	  background: #8FBF59;
 	  color: #fff;
@@ -330,35 +330,35 @@ a:active {
 	  transition: all 200ms ease-in;
 	}
 
-	input[type="checkbox"] {
+	.menuinput[type="checkbox"] {
 	  display:none;
 	}
 
-	input[type="checkbox"]:checked ~ nav {
+	.menuinput[type="checkbox"]:checked ~ nav {
 	  margin:0;
 		filter:blur(0px);
 		opacity:1;
 	}
 
-	input[type="checkbox"]:checked ~ label {
+	.menuinput[type="checkbox"]:checked ~ .menulabel {
 	  left:260px;
 	}
 
-	input[type="checkbox"]:checked ~ .bar {
+	.menuinput[type="checkbox"]:checked ~ .bar {
 		-webkit-transform:translate3d(260px, 0, 0);
 	  -moz-transform:translate3d(260px, 0, 0);
 	  -o-transform:translate3d(260px, 0, 0);
 	  transform:translate3d(260px, 0, 0);
 	}
 
-	input[type="checkbox"]:checked ~ .content {
+	.menuinput[type="checkbox"]:checked ~ .content {
 	  -webkit-transform:translate3d(260px, 0, 0);
 	  -moz-transform:translate3d(260px, 0, 0);
 	  -o-transform:translate3d(260px, 0, 0);
 	  transform:translate3d(260px, 0, 0);
 	}
 
-	input[type="checkbox"]:checked ~ .footer {
+	.menuinput[type="checkbox"]:checked ~ .footer {
 		-webkit-transform:translate3d(250px, 0, 0);
 		-moz-transform:translate3d(250px, 0, 0);
 		-o-transform:translate3d(250px, 0, 0);
@@ -369,11 +369,11 @@ a:active {
 
 /* medium screens */
 @media screen and (min-width: 900px) and (max-width: 1299px) {
-	input {
+	.menuinput {
 		display: none;
 	}
 
-	label {
+	.menulabel {
 		display: none;
 	}
 
@@ -421,11 +421,11 @@ a:active {
 
 /* large screens */
 @media screen and (min-width: 1300px) {
-	input {
+	.menuinput {
 		display: none;
 	}
 
-	label {
+	.menulabel {
 		display: none;
 	}
 
