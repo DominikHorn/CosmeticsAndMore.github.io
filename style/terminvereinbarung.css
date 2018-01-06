@@ -1,5 +1,15 @@
 /* Spanish-Rose: #882D6A; */
 /* Green: #8FBF59; */
+#form {
+	animation: appearUp 0.7s ease forwards;
+	visibility: visible !important;
+}
+
+#data {
+	animation: appearUp 0.7s ease forwards;
+	visibility: visible !important;
+}
+
 #form summary {
 	font-size: 150%;
 	display: block;

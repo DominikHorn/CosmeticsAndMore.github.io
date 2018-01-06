@@ -15,6 +15,19 @@
   }
 }
 
+@keyframes appearUp {
+	0% {
+		filter: blur(3px);
+		transform: translateY(40px);
+		opacity: 0.0;
+	}
+	100% {
+		filter: blur(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 @keyframes appearLeft {
 	0% {
 		filter: blur(3px);
@@ -41,15 +54,6 @@
 	}
 }
 
-@keyframes slideRight {
-	0% {
-		transform: translateX(-150%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
-}
-
 @keyframes fadeIn {
 	0% {
 		transform: scale(0.2);
@@ -58,6 +62,15 @@
 	100% {
 		transform: scale(1);
 		opacity: 1;
+	}
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(-150%);
+	}
+	100% {
+		transform: translateX(0);
 	}
 }
 
