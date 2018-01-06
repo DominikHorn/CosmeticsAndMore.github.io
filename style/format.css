@@ -171,6 +171,28 @@ a:active {
    Navigation element, default browser experience
    ==============================================*/
 
+@media screen and (max-width: 349px) {
+	.bar h1 {
+		color: #666;
+		font-family: 'Annabelle';
+		font-size: 23px;
+		margin-top: 20px;
+		margin-left: 40px;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 350px) {
+		.bar h1 {
+			color: #666;
+			font-family: 'Annabelle';
+			font-size: 29px;
+			margin-top: 17px;
+			margin-left: 35px;
+			text-align: center;
+		}
+}
+
 /* small screens */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.content {
@@ -197,14 +219,6 @@ a:active {
 		-webkit-transition: all 200ms ease-in;
 		-o-transition: all 200ms ease-in;
 		transition: all 200ms ease-in;
-	}
-
-	.bar h1 {
-		color: #666;
-		font-family: 'Annabelle';
-		font-size: 35px;
-		margin-top: 10px;
-		text-align: center;
 	}
 
 	.page {
