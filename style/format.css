@@ -240,4 +240,10 @@ a:active {
 		font-size: 16pt;
 		line-height: 24pt;
 	}
+
+	.footer {
+		max-width: 1400px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
 }

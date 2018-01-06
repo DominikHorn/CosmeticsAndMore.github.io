@@ -1,7 +1,5 @@
 p {
 	text-align: justify;
-	font-size: 160%;
-	line-height: 130%;
 }
 
 #profile {
@@ -11,6 +9,16 @@ p {
 
 /* Small displays */
 @media screen and (min-width: 1px) and (max-width: 899px) {
+	p {
+		font-size: 6vw;
+		line-height: 7vw;
+	}
+
+	h2 {
+		font-size: 8vw;
+		margin-bottom: 2vw;
+	}
+
 	#profile {
 		margin-top: 1em;
 		margin-bottom: 1em;
@@ -28,13 +36,19 @@ p {
 	}
 }
 
-h2 {
-	font-size: 200%;
-	margin-bottom: 10px;
-}
-
 /* Medium displays */
 @media screen and (min-width: 900px) and (max-width: 1299px) {
+	p {
+		font-size: 18pt;
+		line-height: 20pt;
+	}
+
+	h2 {
+		font-size: 24pt;
+		margin-top: 15pt;
+		margin-bottom: 10pt;
+	}
+
 	#profile {
 		width: 800px;
 		margin-top: 1em;
@@ -52,6 +66,18 @@ h2 {
 
 /* large screens */
 @media screen and (min-width: 1300px) {
+	p {
+		font-size: 20pt;
+		line-height: 22pt;
+	}
+
+	h2 {
+		font-size: 26pt;
+		margin-top: 15pt;
+		margin-bottom: 10pt;
+	}
+
+
 	#profile {
 		max-width: 42%;
 		margin-right: 1em;
