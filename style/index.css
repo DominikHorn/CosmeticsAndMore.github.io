@@ -25,19 +25,18 @@
 /* Welcome Banner */
 #welcomeBanner {
 	text-align: center;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	font-size: 3.5em;
+	margin: 30px 50px 10px 50px;
+	font-size: 40pt;
 }
 
 /* small screens (phones etc) */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.largeTextContainer {
 		width: auto;
-		margin-left: 1.5em;
-		margin-right: 1.5em;
+		margin-left: 10%;
+		margin-right: 10%;
 		text-align: justify;
-		font-size: 6vw;
+		font-size: 17pt;
 		overflow: hidden;
 		line-height: 120%;
 	}
@@ -46,8 +45,8 @@
 		overflow: hidden;
 		width: auto;
 		text-align: center;
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-left: 5%;
+		margin-right: 5%;
 
 	}
 
@@ -71,7 +70,7 @@
 	#welcomeBanner {
 		margin-left: 5%;
 		margin-right: 5%;
-		font-size: 2em;
+		font-size: 28pt;
 		font-weight: bold;
 	}
 }
@@ -80,26 +79,27 @@
 @media screen and (min-width: 900px) and (max-width: 1299px) {
 	.largeTextContainer {
 		width: auto;
-		margin-left: 1.5em;
-		margin-right: 1.5em;
+		margin-left: 65px;
+		margin-right: 65px;
 		text-align: justify;
-		font-size: 1.7em;
+		font-size: 17pt;
 		overflow: hidden;
-		line-height: 120%;
+		line-height: 20pt;
 	}
 
 	.largeImgContainer {
 		overflow: hidden;
-		margin-top: 1em;
+
 		width: auto;
+		margin: 0 auto;
+		margin-top: 30px;
+
 		text-align: center;
-		margin-left: 1.5em;
-		margin-right: 1.5em;
 	}
 
 	.largeImgContainer img {
-		margin-left: 0.5em;
-		margin-right: 0.5em;
+		margin-left: 10px;
+		margin-right: 10px;
 		max-height: 30%;
 		width: 29%;
 
@@ -110,11 +110,6 @@
 
 	.largeImgContainer li {
 		display: inline;
-	}
-
-	#welcomeBanner {
-		margin-left: 1.5em;
-		margin-right: 1.5em;
 	}
 }
 
@@ -130,17 +125,17 @@
 	}
 
 	.largeTextContainer {
-		width: 1050px;
-		margin-left: auto;
-		margin-right: auto;
 		text-align: justify;
-		font-size: 1.5em;
-		line-height: 120%;
+		font-size: 17pt;
+		line-height: 20pt;
+
+		width: 1020px;
+		margin: 0 auto;
 	}
 
 	.largeImgContainer img {
-		margin-left: 0.5em;
-		margin-right: 0.5em;
+		margin-left: 10px;
+		margin-right: 10px;
 		width: auto;
 		height: 230px;
 

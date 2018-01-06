@@ -123,7 +123,7 @@ a:active {
    ==============================================*/
 
 /* small screens */
-@media screen and (min-width: 1px) and (max-width: 899px) {
+@media screen and (min-width: 1px) and (max-width: 599px) {
 	.navigation {
 		overflow: auto;
 		text-align: center;
@@ -147,6 +147,7 @@ a:active {
 
 	.navigation li {
 		list-style: none;
+
 		font-size: 4.7vw;
 		line-height: 5.5vw;
 	}
@@ -155,6 +156,8 @@ a:active {
 		border-top-width: 3px;
 		border-top-color: #882D6A;
 		border-top-style: solid;
+
+		overflow: auto;
 	}
 
 	.navigation .left {
@@ -170,6 +173,60 @@ a:active {
 	.navigation .right {
 		float: right;
 		padding-right: 15px;
+	}
+}
+
+/* medium small screens */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+	.navigation {
+		overflow: auto;
+		text-align: center;
+		border-bottom-width: 3px;
+		border-bottom-color: #882D6A;
+		border-bottom-style: solid;
+	}
+
+	.navigation img {
+		max-width: 25%;
+		min-width: 150px;
+		min-height: 75px;
+		height: auto;
+		width: auto\9;	/*i8 fix*/
+		margin: 0 auto;
+	}
+
+	.navigation ul {
+		padding: 10px 0px 10px 0px;
+		margin-left: 10px;
+	}
+
+	.navigation li {
+		list-style: none;
+
+		font-size: 16pt;
+		line-height: 18pt;
+	}
+
+	.navigation #nav {
+		overflow: auto;
+
+		border-top-width: 3px;
+		border-top-color: #882D6A;
+		border-top-style: solid;
+	}
+
+	.navigation .left {
+		display: inline-block;
+		padding-right: 20%;
+
+		border-right-width: 3px;
+		border-right-color: #882D6A;
+		border-right-style: solid;
+	}
+
+	.navigation .right {
+		display: inline-block;
+		padding-left: 7%;
 	}
 }
 
