@@ -196,7 +196,7 @@ a:active {
 /* small screens */
 @media screen and (min-width: 1px) and (max-width: 899px) {
 	.content {
-		margin-top: 60px;
+		margin-top: 70px;
 	}
 
 	#imp {
